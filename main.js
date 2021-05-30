@@ -3,8 +3,14 @@ const App = {
     data() {
         
         return {
-            counter: 0,
-            title: 'Счетчик'
+            placeholderString: 'Введите название заметки',
+            title: 'Список заметок',
+            inputValue: ''
+        }
+    },
+    methods:{
+        inputChangeValue(event){
+            this.inputValue =event.target.value
         }
     }
 }
