@@ -1,7 +1,5 @@
 const App = {
-    
     data() {
-        
         return {
             placeholderString: 'Введите название заметки',
             title: 'Список заметок',
@@ -11,10 +9,11 @@ const App = {
     },
     methods:{
         inputChangeValue(event){
-            this.inputValue =event.target.value
+            this.inputValue = event.target.value
         },
         addNewNote(){
             this.notes.push(this.inputValue)
+            this.inputValue = ''
         }
     }
 }
