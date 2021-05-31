@@ -32,6 +32,13 @@ const App = {
             console.log('tripleNotesComputed');
             return this.notes.length * 3
         },
+    },
+    watch:{
+        inputValue(value){
+            if(value.length>10){
+                this.inputValue = ''
+            }
+        }
     }
 }
 
