@@ -20,10 +20,18 @@ const App = {
         toUpperCase(item){
             return item.toUpperCase()
         },
+        // tripleNotes(){
+        //     return this.notes.length * 3
+        // },
         removeNote(index){
             this.notes.splice(index, 1)
         }
-
+    },
+    computed: {
+        tripleNotesComputed(){
+            console.log('tripleNotesComputed');
+            return this.notes.length * 3
+        },
     }
 }
 
