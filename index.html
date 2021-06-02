@@ -31,10 +31,10 @@
                 <!-- <span :class="myNote.length > 5 ? 'primary' : 'bold' ">
                      ({{ index + 1}})    {{ toUpperCase(myNote) }}
                 </span> -->
-                <span :class="{
-                    'primary' : true,
-                    'bold' : myNote.length > 5
-                }">
+                <!-- <span :class="{'primary' : true,'bold' : myNote.length > 5}">
+                    ({{ index + 1}})    {{ toUpperCase(myNote) }}
+                </span> -->
+                <span :class="[ 'bold', { 'primary' : myNote.length > 5}]">
                     ({{ index + 1}})    {{ toUpperCase(myNote) }}
                 </span>
                 <button class="btn danger"@click="removeNote(index)">Удалить</button>
