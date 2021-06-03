@@ -1,6 +1,6 @@
 Vue.createApp({
   data: () => ({
-    myHtml: "<h1> Vue3 App</h1>",
+    myHtml: "<h1> Jaxa</h1>",
     title: "Главная",
     person: {
       firstName: "Jaxan",
